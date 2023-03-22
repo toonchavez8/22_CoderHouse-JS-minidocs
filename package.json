@@ -1,0 +1,20 @@
+{
+  "name": "00_js_documentacion",
+  "version": "1.0.0",
+  "description": "un mini ejeercicio de escribir documentaion usano las notas que generamo de las classes a forma snecilal usando solo html css y js ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "coderhouse",
+    "js",
+    "documentaion"
+  ],
+  "author": "miguel chavez",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.22",
+    "sass": "^1.59.3"
+  }
+}
