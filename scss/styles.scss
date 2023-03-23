@@ -1,3 +1,14 @@
+@use "base" as *;
+@use "./layout" as *;
+
 .debug {
-	border: 1px solid red;
+	border: 1px solid lime;
+
+	&-1 {
+		border: 1px solid red;
+	}
+
+	&-2 {
+		border: 1px solid blue;
+	}
 }

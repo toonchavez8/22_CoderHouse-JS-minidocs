@@ -1,0 +1,43 @@
+.body-wrapper {
+	min-height: 100vh;
+	min-height: 100dvh;
+
+	display: grid;
+
+	grid-template-columns: auto 1fr;
+
+	header {
+		isolation: isolate;
+		grid-template-columns: auto;
+		min-width: fit-content;
+
+		nav {
+			height: 100vh;
+			height: 100dvh;
+
+			padding-right: 3rem !important;
+
+			z-index: 0;
+		}
+	}
+
+	main {
+		height: 100vh;
+		height: 100dvh;
+	}
+}
+
+.sidebar-open {
+	transition: all 0.1 ease-in-out;
+	grid-template-columns: 0 1fr;
+}
+
+@media (max-width: 48rem) {
+	/* adjust grid layout when sidebar is closed */
+
+	.sidebar-open {
+		main {
+			padding-left: 5rem;
+		}
+	}
+}

@@ -1,5 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  transition: all 0.5s ease-in-out !important;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+.body-wrapper {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.body-wrapper header {
+  isolation: isolate;
+  grid-template-columns: auto;
+  min-width: fit-content;
+}
+.body-wrapper header nav {
+  height: 100vh;
+  height: 100dvh;
+  padding-right: 3rem !important;
+  z-index: 0;
+}
+.body-wrapper main {
+  height: 100vh;
+  height: 100dvh;
+}
+
+.sidebar-open {
+  transition: all 0.1 ease-in-out;
+  grid-template-columns: 0 1fr;
+}
+
+@media (max-width: 48rem) {
+  /* adjust grid layout when sidebar is closed */
+  .sidebar-open main {
+    padding-left: 5rem;
+  }
+}
+.menu {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(25%, -25%);
+  scale: 0.5;
+  z-index: 999999 !important;
+}
+@media screen and (max-width: 48rem) {
+  .menu {
+    transform: translate(60%, -50%);
+    scale: 0.4;
+  }
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.btm-border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .debug {
+  border: 1px solid lime;
+}
+.debug-1 {
   border: 1px solid red;
+}
+.debug-2 {
+  border: 1px solid blue;
 }
 
 /*# sourceMappingURL=styles.css.map */
