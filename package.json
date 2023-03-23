@@ -4,7 +4,10 @@
   "description": "un mini ejeercicio de escribir documentaion usano las notas que generamo de las classes a forma snecilal usando solo html css y js ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch scss:css",
+    "sassbuild": "sass --no-source-map --style=compressed scss:css",
+    "start": "nodemon -e scss,html  -x \"npm run sass\"",
+    "build": "npm run sassbuild"
   },
   "keywords": [
     "coderhouse",
