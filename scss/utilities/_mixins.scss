@@ -1,0 +1,7 @@
+@mixin font-size-utilities($sizes) {
+	@each $size in $sizes {
+		.fs-#{$size} {
+			font-size: $size;
+		}
+	}
+}

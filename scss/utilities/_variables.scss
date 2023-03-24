@@ -1,0 +1,98 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,700;0,800&family=Source+Code+Pro&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,800;1,200;1,300;1,600;1,700&display=swap");
+
+$ff-Dm-Sans: "DM Sans", sans-serif;
+$ff-code: "Source Code Pro", monospace;
+$ff-poppins: "Poppins", sans-serif;
+
+// Font weights
+$fw-100: 100;
+$fw-200: 200;
+$fw-300: 300;
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+$fw-800: 800;
+
+// font sizes
+$fs-12: 0.75rem;
+$fs-14: 0.875rem;
+$fs-16: 1rem;
+$fs-18: 1.125rem;
+$fs-20: 1.25rem;
+$fs-24: 1.5rem;
+$fs-28: 1.75rem;
+$fs-32: 2rem;
+$fs-36: 2.25rem;
+$fs-40: 2.5rem;
+$fs-48: 3rem;
+$fs-56: 3.5rem;
+$fs-64: 4rem;
+$fs-72: 4.5rem;
+$fs-80: 5rem;
+$fs-96: 6rem;
+
+// line heights
+
+$lh-12: 0.75rem;
+$lh-16: 1rem;
+$lh-20: 1.25rem;
+$lh-24: 1.5rem;
+$lh-28: 1.75rem;
+$lh-32: 2rem;
+$lh-36: 2.25rem;
+$lh-40: 2.5rem;
+
+// // Colors
+
+// // --------------------------------------------------
+
+// // Colors
+
+$white: rgb(255, 255, 255);
+$black-800: rgb(31, 32, 35);
+$black-900: rgb(0, 0, 0);
+
+$gray-300: rgb(245, 245, 245);
+$gray-400: rgb(225, 225, 225);
+$gray-500: rgb(185, 185, 185);
+$gray-700: rgb(57, 59, 67);
+$gray-800: rgb(43, 44, 50);
+
+$lime-400: rgb(212, 231, 97);
+$lime-500: rgb(158, 202, 0);
+
+$lavender-400: rgb(231, 145, 255);
+$lavender-500: rgb(219, 50, 255);
+
+$light-blue-400: rgb(132, 173, 251);
+$light-blue-500: rgb(50, 122, 255);
+
+// // --------------------------------------------------
+
+// // // Media queries for responsive design
+
+@media screen and (max-width: 48rem) {
+	// font sizes
+	$fs-12: 8px;
+	$fs-14: 10px;
+	$fs-16: 12px;
+	$fs-18: 14px;
+	$fs-20: 16px;
+	$fs-24: 18px;
+	$fs-28: 20px;
+	$fs-32: 20px;
+	$fs-36: 24px;
+	$fs-40: 28px;
+	$fs-48: 36px;
+	$fs-56: 40px;
+	$fs-64: 48px;
+	$fs-72: 56px;
+	$fs-80: 65px;
+	$fs-96: 72px;
+}
+
+// // --------------------------------------------------

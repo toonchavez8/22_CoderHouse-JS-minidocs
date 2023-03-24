@@ -3,6 +3,10 @@
 
 <head>
     <title>Js Documentation</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,48 +18,150 @@
     <!-- Bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-    <!-- Custom CSS -->
+    <!-- Global CSS -->
     <link rel="stylesheet" href="./css/styles.css">
 
 
 </head>
 
-<body class="body-wrapper">
+<body class="body-wrapper bg-gray-400 ff-Dm-Sans ">
     <header class=" position-relative " id="sideBar">
-        <nav class=" d-flex flex-column flex-shrink-0  px-1  bg-light overflow-auto ">
+        <nav class=" scroll-lime | d-flex flex-column  flex-shrink-0  px-1  bg-light overflow-auto  ">
+
+
             <a href="/"
-                class=" btm-border | d-flex align-items-center py-3 m-0 link-dark text-decoration-none sticky-top col-12  bg-light px-2 px-md-5    ">
-                <span class="fs-4">Documentation</span>
+                class=" btm-border | d-flex flex-column align-items-center py-3 m-0 link-dark text-decoration-none sticky-top col-12  bg-light px-2 px-md-5    ">
+
+                <img src="https://www.coderhouse.com.mx/imgs/ch.svg" alt="" class="invert">
+                <div class="d-flex justify-content-center align-items-baseline pt-1">
+                    <span class=" docs | fs-20 fw-700
+                    ff-Dm-Sans text-uppercase 
+                    c-black-900">JS Docs</span>
+                    <small class="
+                        ms-2
+                        d-none
+                        d-md-block
+                        
+                        fw-500
+                        ff-poppins
+                        fst-italic
+                        text-uppercase
+                    ">
+                        <span class="d-block ">v1.0.0</span>
+                    </small>
+                </div>
             </a>
 
-            <ul
-                class="nav nav-pills flex-column mb-auto  mx-1 px-1 px-md-4 mt-4 justify-content-center align-content-start  ">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active" aria-current="page">
-                        Getting Started
-                    </a>
+            <ul class="list-unstyled ms-4 mt-1 pt-1">
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center text-capitalize border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                        Home
+                    </button>
+                    <div class="collapse show" id="home-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">Introducion</a>
+                            </li>
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">Herramientas</a>
+                            </li>
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">resumen</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <li>
-                    <a href="#" class="nav-link link-dark">
-                        Installation
-                    </a>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center text-capitalize border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Clase 01
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">Tema</a></li>
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">tema</a>
+                            </li>
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">tema</a>
+                            </li>
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">Resumen</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <li>
-                    <a href="#" class="nav-link link-dark">
-                        Usage
-                    </a>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center text-capitalize border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                        Clase 02
+                    </button>
+                    <div class="collapse" id="orders-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none text-capitalize">New</a>
+                            </li>
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">Processed</a>
+                            </li>
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">Shipped</a>
+                            </li>
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">Returned</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <li>
-                    <a href="#" class="nav-link link-dark">
-                        API Reference
-                    </a>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center text-capitalize border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                        Clase 03
+                    </button>
+                    <div class="collapse" id="orders-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none text-capitalize">New</a>
+                            </li>
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">Processed</a>
+                            </li>
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">Shipped</a>
+                            </li>
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">Returned</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <li>
-                    <a href="#" class="nav-link link-dark">
-                        FAQs
-                    </a>
+                <li class="border-top my-3"></li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center text-capitalize border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                        Recursos
+                    </button>
+                    <div class="collapse" id="account-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">New...</a></li>
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">Profile</a>
+                            </li>
+                            <li><a href="#"
+                                    class="link-dark d-inline-flex text-decoration-none text-capitalize">Settings</a>
+                            </li>
+                            <li><a href="#" class="link-dark d-inline-flex text-decoration-none text-capitalize">Sign
+                                    out</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
+
+
+
 
         </nav>
         <button class="menu  opened  " aria-label="Main Menu">
@@ -70,221 +176,96 @@
     </header>
 
 
-    <main class="container-fluid bg-danger overflow-auto">
+    <main class="container-fluid overflow-auto  py-5 scroll-lime">
 
-        <section class=" container ">
-            <h1>
-                Getting Started
-            </h1>
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-        </section>
-        <section class="container overflow-auto">
-            <h1>
-                Getting Started
-            </h1>
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-        </section>
-        <section class="container overflow-auto">
-            <h1>
-                Getting Started
-            </h1>
+        <article
+            class="container-fluid   col-12 col-md-10 col-lg-8 d-flex flex-column gap-2 mt-4 px-1 px-md-3 px-lg-5  c-black-800 lh-28">
+            <header>
+                <h1 class="fw-600 text-capitalize ">introduction a JS Docs</h1>
+            </header>
+            <section class="container px-0 px-md-4">
+                <p class="">
+                    El objetivo de este documento es presentar los conceptos básicos de JavaScript y su sintaxis que
+                    estamos
+                    viendo en clase como notas mejor definidas y elaboradas. <span class="fw-600">
+                        Este documento no es un manual de referencia, sino más bien un documento de consulta
+                        rápida que se puede utilizar para recordar los conceptos básicos de JavaScript.
+                    </span> Si deseas obtener más
+                    información sobre un tema en particular, consulte la documentación de referencia correspondiente.
+                </p>
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem exercitationem tempore nulla
-                provident laborum laudantium porro, officia dolorem voluptates ex pariatur reiciendis nemo cupiditate,
-                earum possimus cumque, sunt ad!
-            </p>
-        </section>
+                <p>
+                    Este documento está destinado a los desarrolladores web que desean aprender JavaScript duante la
+                    comision <span class="fw-600 c-lavender-400">39505</span> y que sirva como un espaio para ver
+                    elementos practicos y anotcaciones durante la cursada de la materia.
+                </p>
+            </section>
+
+            <figure class="col-8 align-self-center c-light-blue-500 opacity-75">
+                <blockquote class="blockquote">
+                    <p class="mb-0">"Cualquiera puede escribir código que una computadora pueda entender. Los buenos
+                        programadores
+                        escriben código que los humanos pueden entender."</p>
+                </blockquote>
+
+                <figcaption class="blockquote-footer">
+                    Martin Fowler
+                </figcaption>
+            </figure>
+
+            <section class="container px-0 px-md-4">
+                <p class="">
+                    Para poder escribier buen codigo primero hay que entenderlo, por eso
+                    estre agregano no solo los elementos que estamos viendo en clase, sino tambien tambien las
+                    definiciones de los mismos y otras apliaciones que se pueden dar en el mundo real. con el fin de que
+                    puedan entender mejor los conceptos y puedan aplicarlos en su vida diaria.
+                </p>
+
+                <p>
+                    Yo creo este documento mas para mi que para ustedes, pero si les sirve para algo, genial. Si no, no
+                    pasa nada, igualmente lo voy a usar para poder tener un espacio donde poder anotar cosas y que me
+                    ayude a entender mejor los conceptos que yo previamente lo habia visto pero quiero que se me quede
+                    bien encrustrado en la mente.
+                </p>
+            </section>
+
+
+            <header>
+                <h2 class="fw-600 text-capitalize ">¿Por donde se empieza?</h2>
+            </header>
+
+            <section class="container px-0 px-md-4">
+                <p>
+                    De lado isquierdo de la pantalla se encuentra el menu de navegacion, en el cual se encuentran los
+                    links que te llevarian a las distinas classes. Tambien se encuentra el boton de menu, el cual te
+                    permite
+                    abrir y cerrar el menu de navegacion. por si te estorba en la pantalla.
+
+
+                </p>
+
+                <p> te romiendo que si necestias ayuda con algu na classe o algo puedes ir directamente a la classe y
+                    section o tema que necesties o si no dejo una liga donde podrias arrancar con la clase 1</p>
+
+            </section>
+            <header>
+                <h2 class="fw-600 text-capitalize ">¿Por donde se empieza?</h2>
+            </header>
+
+            <section class="container px-0 px-md-4">
+                <p>
+                    De lado isquierdo de la pantalla se encuentra el menu de navegacion, en el cual se encuentran los
+                    links que te llevarian a las distinas classes. Tambien se encuentra el boton de menu, el cual te
+                    permite
+                    abrir y cerrar el menu de navegacion. por si te estorba en la pantalla.
+
+
+                </p>
+            </section>
+        </article>
+
 
     </main>
     <footer>
