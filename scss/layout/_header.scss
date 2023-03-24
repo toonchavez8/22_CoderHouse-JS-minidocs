@@ -137,3 +137,37 @@
 .btn-toggle-nav a:focus {
 	color: $light-blue-500 !important;
 }
+
+// change overflow scroll bar design to lime on scroll-lime
+
+.scroll-lime::-webkit-scrollbar {
+	width: 0.25rem;
+
+	&-track {
+		background: linear-gradient(180deg, $lavender-400 0%, $light-blue-500 100%);
+
+		// animate the scroll bar gradient
+		animation: scroll 1s linear infinite;
+
+		@keyframes scroll {
+			0% {
+				background-position: 0% 0%;
+			}
+			100% {
+				background-position: 100% 0%;
+			}
+		}
+	}
+
+	&-thumb {
+		background: linear-gradient(180deg, $lime-400 50%, $lime-500 100%);
+	}
+}
+
+// where scroll-lime is used in on the main tag make wideer scroll bar
+
+main.scroll-lime {
+	&::-webkit-scrollbar {
+		width: 0.5rem;
+	}
+}
