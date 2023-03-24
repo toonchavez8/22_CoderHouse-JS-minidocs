@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,700&family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,700;0,800&family=Source+Code+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,800;1,200;1,300;1,600;1,700&display=swap");
 .ff-poppins {
   font-family: "Poppins", sans-serif !important;
@@ -247,7 +247,7 @@
 *,
 *::before,
 *::after {
-  transition: all 0.5s ease-in-out !important;
+  transition: all 0.25s ease-in-out !important;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -572,7 +572,7 @@ template {
 .body-wrapper header nav {
   height: 100vh;
   height: 100dvh;
-  padding-right: 3rem !important;
+  padding-right: 4rem !important;
   z-index: 0;
 }
 .body-wrapper main {
@@ -653,6 +653,88 @@ template {
 
 .btm-border {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.docs {
+  position: relative;
+}
+
+.docs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0%, 20px);
+  width: 150%;
+  height: 15%;
+  background: rgb(212, 231, 97);
+  z-index: -1;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.btn-toggle {
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  color: rgb(31, 32, 35);
+  background-color: transparent;
+  border-radius: 0 !important;
+  position: relative;
+  isolation: isolate;
+}
+
+.btn-toggle::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  transform: translate(28px, -10px);
+  z-index: -1;
+  background-color: rgb(212, 231, 97);
+  transition: width 0.3s ease-in-out;
+}
+
+.btn-toggle:hover::after,
+.btn-toggle:focus::after {
+  width: 100%;
+}
+
+.btn-toggle::before {
+  display: inline-block;
+  font-family: monospace !important;
+  width: 1.25em;
+  line-height: 0;
+  content: ">";
+  color: rgb(212, 231, 97);
+  transition: transform 0.35s ease;
+  transform-origin: 0.5em 50%;
+}
+
+.btn-toggle[aria-expanded=true] {
+  color: rgb(50, 122, 255);
+}
+
+.btn-toggle[aria-expanded=true]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  padding: 0.1875rem 0.5rem;
+  margin-top: 0.125rem;
+  margin-left: 1.25rem;
+}
+
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+  color: rgb(50, 122, 255) !important;
 }
 
 .debug {
